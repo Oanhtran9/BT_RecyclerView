@@ -43,7 +43,6 @@ public class CustomAdapter extends ArrayAdapter<Contact> {
         viewHolder.imgAvatar.setImageResource(contact.getAvatarResId());
         viewHolder.tvName.setText(contact.getName());
         viewHolder.tvMaSinhVien.setText("MSSV: " + contact.getIdStudent());
-
         return convertView;
     }
 

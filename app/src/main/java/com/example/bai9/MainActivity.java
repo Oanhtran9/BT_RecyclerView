@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         arrContact.add(new Contact("Đỗ Thiên Giang", "131250532378", R.drawable.avatar_default_img));
         arrContact.add(new Contact("Võ Hữu Hải", "151250533116", R.drawable.avatar_default_img));
 
+
         // Gán adapter
         CustomAdapter customAdapter = new CustomAdapter(this, R.layout.row_listview, arrContact);
         lvContact.setAdapter(customAdapter);

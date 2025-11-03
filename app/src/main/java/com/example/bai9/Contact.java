@@ -10,7 +10,6 @@ public class Contact {
         this.idStudent = idStudent;
         this.avatarResId = avatarResId;
     }
-
     public String getName() {
         return name;
     }
