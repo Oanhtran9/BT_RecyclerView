@@ -26,13 +26,13 @@ public class MainActivity extends AppCompatActivity {
 
         // Tạo danh sách Contact
         ArrayList<Contact> arrContact = new ArrayList<>();
+        arrContact.add(new Contact("Trần Thị Oanh", "23115053122330", R.drawable.avatar_default_img));
         arrContact.add(new Contact("Lê Quốc Bảo", "231150530002", R.drawable.avatar_default_img));
         arrContact.add(new Contact("Phan Thị Cẩm Tú", "231150530003", R.drawable.avatar_default_img));
         arrContact.add(new Contact("Trần Hữu Dũng", "231150530004", R.drawable.avatar_default_img));
         arrContact.add(new Contact("Đặng Thị Hòa", "231150530005", R.drawable.avatar_default_img));
         arrContact.add(new Contact("Võ Văn Khánh", "231150530006", R.drawable.avatar_default_img));
         arrContact.add(new Contact("Ngô Minh Thư", "231150530007", R.drawable.avatar_default_img));
-
         // Gán adapter
         CustomAdapter customAdapter = new CustomAdapter(this, R.layout.row_listview, arrContact);
         lvContact.setAdapter(customAdapter);
